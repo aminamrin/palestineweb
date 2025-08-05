@@ -1,0 +1,223 @@
+:root {
+  --green: #006400;
+  --red: #cc0000;
+  --black: #222;
+  --white: #fff;
+  --gray: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--gray);
+  color: var(--black);
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+
+body.dark-mode section {
+  background-color: #2a2a2a;
+  border-left: 5px solid #00cc66;
+}
+
+body.dark-mode header {
+  background-color: #003300;
+}
+
+body.dark-mode .btn {
+  background-color: #009966;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #007755;
+}
+
+body.dark-mode footer {
+  background-color: #000;
+}
+
+body.dark-mode #quiz-container {
+  background-color: #2a2a2a;
+  border-left: 5px solid #00cc66;
+}
+
+body.dark-mode #quiz-container p,
+body.dark-mode #question,
+body.dark-mode #score {
+  color: #f1f1f1;
+}
+
+body.dark-mode .option-btn {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+body.dark-mode .option-btn.correct {
+  background-color: green;
+}
+
+body.dark-mode .option-btn.incorrect {
+  background-color: red;
+}
+
+header {
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/1920px-Flag_of_Palestine.svg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  text-shadow: 2px 2px 4px #000;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--red);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: var(--red);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #a00000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--black);
+  color: white;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+#quiz-container {
+  background: #fefefe;
+  padding: 1.5rem;
+  border-left: 5px solid var(--green);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.option-btn {
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--red);
+  color: white;
+}
+
+.option-btn:hover {
+  opacity: 0.9;
+}
+
+#restartBtn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#restartBtn:hover {
+  background-color: #004d00;
+}
+
+progress {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.option-btn.correct {
+  background-color: green !important;
+}
+
+.option-btn.incorrect {
+  background-color: red !important;
+}
+
+
+
+
+
